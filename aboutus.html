@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/aboutusicon.png" type="image/x-icon">
+  <title>About Us</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
+  body {
+      padding-bottom: 700px;
+    }
+    .header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 30vh;
+      align-items: center;
+    }
+    .logo img {
+      position: absolute;
+      width: 100px;
+      bottom: 65px;
+      left: 380px;
+      border-radius: 20px;
+    }
+      
+  .title h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: orange;
+    }
+    .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    
+  }
+  .left-cont-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: orange;
+  }
+  .left-cont-title span {
+    color: black;
+  }
+  .left-cont {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-cont-title {
+    margin-bottom: 40px;
+  }
+  .left-cont-desc {
+    line-height: 30px;
+  }
+  .left-cont-button .a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: black;
+    transition: all .4s ease-in-out;
+    border-radius: 5px;
+}
+.left-cont-button .a:hover {
+    background-color: lightgray;
+}
+</style>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="img/aboutusicon.png" alt="">
+    </div>
+    <div class="title">
+      <h1>Heavenly Slices</h1>
+    </div>
+  </div>
+
+  <div class="content">
+      <div class="left-cont">
+        <div class="left-cont-title"><h2><span>About</span> Us</h2></div>
+        <div class="left-cont-desc">
+          <p>
+            At Heavenly Slices, we are passionate about delivering the perfect slice of pizza to satisfy your cravings. With years of experience in the pizza industry, we have crafted a menu that combines traditional flavors with innovative twists, ensuring a heavenly experience with every bite.
+            <br><br>
+            Rest assured, Heavenly Slices operates within the legal framework and holds all the necessary permits and licenses required for a food establishment. We adhere to strict hygiene and safety standards to guarantee the well-being of our customers.
+          </p>
+        </div>
+        <div class="left-cont-button"> 
+          <button class="a" onclick="window.open('./img/Cert-Heaven.pdf')">Go Here</button>
+        </div>
+       
+      </div>
+      <div class="right-cont">
+        <img src="img/aboutt.png" alt="">
+      </div>
+  </div>
+</body>
+</html>

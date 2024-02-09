@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/aboutusicon.png" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"/>
+  <title>FAq</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+  * {
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+    }
+    body {
+      padding-bottom: 200px;
+    }
+    .header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 30vh;
+      align-items: center;
+    }
+    .logo img {
+      position: absolute;
+      width: 100px;
+      bottom: 65px;
+      left: 380px;
+      border-radius: 20px;
+    }
+    
+    .title h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: orange;
+    }
+
+    /*FAQ Content*/
+    .wrapper {
+      max-width: 75%;
+      margin-top: 0;
+      margin: auto;
+    }
+
+    .wrapper > p,
+    .wrapper > h1 {
+      margin: 0  0 30px;
+      text-align: center;
+    }
+
+    .wrapper > h1 {
+      letter-spacing: 3px;
+    }
+
+    .accordion {
+      background-color: #eaeaea;
+      color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 2rem 2.5rem;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .accordion i {
+      font-size: 1.6rem;
+    }
+    .accordion i:hover {
+      background-color: #f1f7f5;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: #f1f7f5;
+
+    }
+ 
+    .pannel {
+      padding: 0 2rem 2.5rem 2rem;
+      background-color: white;
+      overflow: hidden;
+      background-color: #f1f7f5;
+      display: none;
+    }
+    .pannel p {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      background-color: #f1f7f5;
+    }
+
+    .faq {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 10px 0;
+    }
+    .faq.active {
+      border: none;
+    }
+
+
+</style>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="img/aboutusicon.png" alt="">
+    </div>
+    <div class="title">
+      <h1>Heavenly Slices</h1>
+    </div>
+</div>
+<div class="wrapper">
+
+  <h1>F&nbsp;&nbsp;A&nbsp;&nbsp;Q&nbsp;s </h1>
+
+  <div class="faq">
+    <button class="accordion">
+      How do I place an order on your website?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        To place an order on Heavenly Slices, simply visit our website and click on the "Order Now" button. Browse through our delicious pizza options, select your desired toppings and size, and proceed to the checkout page. Follow the prompts to provide your delivery address and payment information, and confirm your order.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      What payment methods do you accept?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        At Heavenly Slices, we accept various payment methods to make it convenient for you. We accept major credit cards, debit cards, and online payment platforms such as PayPal. Choose the payment option that suits you best during the checkout process.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      How long does delivery take?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        We understand your excitement to enjoy our heavenly pizzas! Our delivery time depends on your location and the current order volume. Rest assured, we strive to deliver your piping hot pizzas as quickly as possible. The estimated delivery time will be provided to you during the checkout process.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      Can I track my order?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Absolutely! Once your order is confirmed and out for delivery, we will provide you with a tracking number. You can use this tracking number to monitor the progress of your order and get real-time updates on its status. Tracking information will be sent to you via email or SMS.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      What is your return policy?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        We want you to have the best pizza experience with Heavenly Slices. If, for any reason, you are not satisfied with your order, please contact our customer support within 2 hours of delivery. We will gladly address any concerns and provide a suitable solution, which may include a refund or replacement.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      How do I contact customer support?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Our dedicated customer support team is here to assist you. You can reach us by emailing heavenlyslices3@gmail.com or by calling our customer support hotline at 09192837465. We are available during [mention the working hours or days] to answer any questions you may have or to assist with any issues.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      Do you offer any discounts or promotions?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Yes, at Heavenly Slices, we love to treat our customers with special offers and promotions. Keep an eye out for our exclusive discounts and limited-time promotions on our website or follow us on social media. Don't miss out on the chance to enjoy our heavenly pizzas at a great price!
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      this.parentElement.classList.toggle("active");
+
+      var pannel = this.nextElementSibling;
+
+      if (pannel.style.display === "block") {
+        pannel.style.display = "none";
+      } else {
+        pannel.style.display = "block";
+      }
+    });
+  }
+</script>
+</body>
+</html>
